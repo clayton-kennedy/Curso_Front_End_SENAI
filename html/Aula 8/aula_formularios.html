@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!-- ul>li*5 -->
+    <!-- ul*5>li*5 -->
+    <!-- ul*>li*5{item $} -->
+    <!-- div>label+input -->
+
+<form action="./formulario.js">
+        <div>
+            <label for="nome">Nome: </label> 
+            <input type="text" id="nome" name="nameNome">
+        </div>
+        <br>
+        <div>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" name="nameSobrenome" id="sobrenome">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+    </form> 
+<hr>
+
+    <h2>Login</h2>
+    <hr><br>
+    <form action="./login.js" method="post">
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" placeholder="O primeiro nome" id="nome" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" placeholder="Digite seu email" id="email" name="nameEmail" required>
+        </div>
+        <br>
+        <div>
+            <label for="senha">Senha:</label>
+            <input type="password" name="nameSenha" placeholder="Digite sua senha" id="senha" minlength="6" maxlength="16" required>
+        </div>
+        <br>
+        <div>
+            <label for="nascimento">Data nascimento:</label>
+            <input type="date" name="nameNascimento" id="nascimento" required>
+        </div>
+        <br>
+        <div>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="nameTelefone" id="telefone" required>
+        </div>
+        <br>
+        <div>
+            <label for="arquivo">Foto:</label>
+            <input type="file" name="nameArquivo" id="arquivo" required>
+        </div>
+        <br>
+        <div>
+            <label for="range">Foto:</label>
+            <input type="range" name="nameRange" id="range" 
+            min="1" max="5" required>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Cadastrar">
+        </div>
+    </form>
+            <br>
+            Lista de opções:<br>
+            <form action="cadastro.js" method="post">
+                <label for="estado">Estado</label>
+                <select name="iestado" id="estado">
+                    <option value="none"></option>
+                    <option value="BA">Salvador</option>
+                    <option value="DF">Brasília</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </select>
+            </form>
+            <br>
+            Separa por categorias:<br>
+            <form action="cadastro.js" method="post">
+                <label for="estado">Estado</label>
+                <select name="iestado" id="estado">
+                    <option value="none"></option>
+                    <optgroup label="Nordeste">
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                    </optgroup>
+                    <optgroup label="Centro-oeste">>
+                        <option value="DF">DF</option>
+                        <option value="MT">MT</option>
+                    </optgroup>
+                    <optgroup label="Sudeste">
+                        <option value="RJ">RJ</option>
+                        <option value="SP">SP</option>
+                    </optgroup>
+                </select>
+            </form>
+            <br>
+            Sugere opção<br>
+            <form action="">
+                <label for="jogo">Jogo</label>
+                <input type="text" name="ijogo" id="jogo" list="jogolist">
+                <datalist name="ijogoist" id="jogolist">
+                    <option value="GOD">God of War</option>
+                    <option value="GOH">God Hand</option>
+                </datalist>
+            </form>
+            <br>
+            Comentários:<br>
+            <form action="comentario.js">
+                <label for="comentario"></label>
+                <textarea name="icoment" id="comentario" cols="20" rows="5"></textarea>
+            </form>
+            <br>
+            Range mostrando o valor selecionado:<br>
+            <form action="">
+                <label for="range">Selecione:</label>
+                <input type="range" id="range" name="irange" max="10" min="1"
+                oninput="saida.innerHTML = Number(irange.value)">
+                <!-- oninput = ação sobre o input
+                saida = id do output que mostra o número
+                inner.HTML = entrada de um comando HTML no js
+                Number = mostrar um número né
+                (irange.value) = valor do name do input -->
+                <output id="saida"> 5 </output>
+            </form>
+            <br>
+            <p>Selecione suas tecnologias:</p>
+            <form action="">
+                <input type="checkbox" name="html" id="ihtml">
+                <label for="ihmtl">HTML</label>
+                <input type="checkbox" name="css" id="icss">
+                <label for="icss">CSS</label>
+                <input type="checkbox" name="javascript" id="js">
+                <label for="js">Javascript</label>
+            </form>
+            <br>
+            <p>Selecione seu curso:</p>
+            <form action="">
+                <label for="">Cursos:</label>
+                <input type="radio" name="curso" id="ifrontend" value="Front End">
+                <label for="ifrontend">Front End</label>
+                <input type="radio" name="curso" id="ibancodados" value="Banco de Dados">
+                <label for="ibancodados">Banco de Dados</label>
+                <input type="radio" name="curso" id="ijava" value="Java">
+                <label for="ijava">Java</label>
+            </form>
+
+
+
+
+            
+</body>
+</html>

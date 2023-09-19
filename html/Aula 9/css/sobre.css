@@ -1,0 +1,48 @@
+
+.section_tittle {
+    margin-top: 30px;
+    font-size: 220px;
+    text-align: center;
+    font-weight: bold;
+    background: linear-gradient(to bottom, rgb(0, 0, 0), rgb(147, 147, 147, 0.4), rgba(255, 255, 255, 0.05));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }  
+#sobre p {
+    width: 700px;
+    margin: auto;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95vw;
+    height: 400px;
+    margin: auto;
+}
+.skills h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+}
+.skills img {
+    width: 110px;
+    height: 110px;
+    margin: 20px;
+	transition: 0.3s;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray; 
+}
+.skills img:hover {
+    width: 110px;
+    height: 110px;
+    -webkit-filter: none;
+}
+.js {
+    border-radius: 20px;
+}

@@ -1,0 +1,34 @@
+body{
+    background: linear-gradient(aqua, white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.olamundo {
+    font-size: 15rem;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Handjet', cursive;
+    font-style: italic;
+    text-align: center;
+    text-decoration: dashed;
+    text-decoration: underline;
+}
+.olamundo p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+.imagem img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aula1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.aula1 address{
+    text-align: left;
+}

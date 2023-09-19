@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styles.css">
+     <title>Lost Ark</title>
+</head>
+<body>
+     <div id="container">
+          <div id="menuTopo">
+               <div class="divTopo"><img src="./assets/logo.png" alt="Logo" id="logo">
+                    <ul>
+                         <li>JOGO</li>
+                         <li>NOVIDADES</li>
+                         <li>COMUNIDADE</li>
+                         <li>SUPORTE</li>
+                    </ul>
+               </div>
+               <div class="botoes">
+               <button id="botao">DOWNLOAD</button>
+               <button id="botao">COMPRE O PACOTE INICIAL</button>
+               </div>
+          </div>
+          <div id="video">
+               <video autoplay muted loop>
+                    <source src="./assets/video.mp4" type="video/mp4">
+               </video>
+          </div>
+          <main>
+               <div id="telaLogin">
+                    <h1>Entre com sua conta </h1>
+               <form id="form">
+                    <label for="login">Nome de usuário ou Email</label><br>
+                    <input type="text" id="login" required><br>
+                    <label for="senha">Senha</label><br>
+                    <input type="password" id="senha" required><br>
+                    <input type="checkbox" id="salvarDados"><label for="salvarDados">Salvar informações neste computador</label><br>
+                    <button id="enviar">Entrar</button>
+               </form>
+               </div>
+          </main>
+     </div>
+</body>
+</html>

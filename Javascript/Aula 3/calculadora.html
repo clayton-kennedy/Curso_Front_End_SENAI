@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+        .calculadora {
+            margin: auto;
+            width: 400px;
+            height: 2%00px;
+            background-color: rgb(85, 52, 52);
+            color: wheat;
+            border-radius: 5%;
+            padding: 20px;
+            border: 1px solid wheat;
+            box-shadow: 5px 5px 10px gray;
+        }
+        .calculadora h1 {
+            text-align: center;
+        }
+        button {
+            background-color: rgb(85, 52, 52);
+            border-radius: 30%;
+            color: wheat;
+            box-shadow: 2px 2px 5px gray;
+            cursor: pointer;
+            padding: 5px;
+            margin: 3px;
+        }
+        button:hover {
+            background-color: rgb(143, 89, 89);
+        }
+        input {
+            letter-spacing: 1px;
+            border-radius: 15%;
+            margin: 5px;
+            padding: 7px;
+            background-color: rgb(219, 219, 219);
+        }
+    </style>
+</head>
+<body>
+    <div class="calculadora">
+    <h1>Calculadora</h1>
+    <br>
+    <form action="">
+            <label for="">Digite o primeiro numero: </label>
+            <input type="number" id="n1">
+        <br>
+            <label for="">Digite o segundo numero: </label>
+            <input type="number" id="n2">    
+        <br>
+        O que deseja fazer?
+        <p>
+            <button type="button" id="somar">Somar</button>
+            <button type="button" id="subtrair">Subtrair</button>
+            <button type="button" id="dividir">Dividir</button>
+            <button type="button" id="multiplicar">Multiplicar</button>
+            <button id="limpar">Limpar</button>
+        </p>
+        <br>
+        Resultado: <div id="resultado"></div>
+        </form>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>

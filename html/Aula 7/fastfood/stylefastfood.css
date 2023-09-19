@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FFF;
+}
+
+#menu-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: #FFF;
+    position: fixed;
+    box-shadow: 0px 0px 20px #999999;
+    border-radius: 10px;
+}
+.nome {
+    justify-content: left;
+    margin-left: 30px;
+    font-size: 2rem;
+}
+.nome uppercase {
+    color: red;
+}
+#menu-topo ul {
+    font-size: 1.5rem;
+    justify-content: right;
+    margin-right: 120px;
+}
+#menu-topo ul > a {
+    text-decoration: none;
+    color: black;
+    justify-content: space-between;
+    margin: 20px;
+}
+#menu-topo ul > a:hover {
+    color: red;
+    /* font-weight: bold; */
+    text-shadow: 0px 0px 2px red;
+}
+#menu-topo ul > a:after {
+    color: red;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,  'wght' 400,  'GRAD' 0,  'opsz' 48;
+}
+
+#meio {
+    display: flex;
+    align-items: center;
+}
+.texto-meio {
+    margin-top: 250px;
+}
+#meio h3 {
+    margin: 50px;
+    color: rgb(255, 60, 0);
+    font-size: 2em;
+    text-shadow: 3px 3px 12px rgb(182, 182, 182);
+}
+#meio h1 {
+    margin: 50px;
+    color: black;
+    text-align: left;
+    font-weight: bold;
+    font-size: 5em;
+}
+#meio p {
+    margin: 50px;
+    color: black;
+}
+#meio img {
+    margin-top: 150px;
+    margin-right: 50px;
+    justify-content:right;
+}
+button {
+    background-color: red;
+    margin-left: 50px;
+    border: none;
+    width: 200px;
+    height: 70px;
+    color: white;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgb(161, 161, 161);
+}
+body a {
+    color: black;
+    text-decoration: none;
+}

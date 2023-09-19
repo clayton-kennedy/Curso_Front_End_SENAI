@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Elementos Adicionais</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            position: relative;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 55px;
+            border-bottom: 1px solid black;
+            box-shadow: 0 0 3px gray;
+            position: fixed;
+            z-index: 7;
+            background-color: rgb(0, 0, 0);
+
+        }
+        nav a {
+            margin-right: 25px;
+            text-decoration: none;
+            color: white;
+        }
+        #carouselExampleInterval, .carousel-inner {
+            z-index: 0;
+        }
+        #botaoInicio {
+            width: 50px;
+            height: 50px;
+            background-color: aqua;
+            color: white;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+        .videoYoutube {
+            display: flex;
+            align-items: center;
+            justify-content: center ;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#" id="inicio">Início</a>
+        <a href="#" >Link 2</a>
+        <a href="#" >Link 3</a>
+        <a href="#" >Link 4</a>
+        <a href="#" >Link 5</a>
+    </nav>
+
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./imagens/raiden.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./imagens/madara.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./imagens/yelan.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div id="botaoInicio">
+        <a href="#inicio">Início</a>
+      </div>
+
+      <div class="videoYoutube"><iframe width="560" height="315" src="https://www.youtube.com/embed/iqFJi5QvTIk?si=OvFwwx-ZFNjFY3Sh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div> 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

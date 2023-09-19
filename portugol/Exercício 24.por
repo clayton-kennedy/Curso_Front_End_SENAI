@@ -1,0 +1,23 @@
+programa {
+  /* EXERCICIO 24- Crie um algoritmo capaz de informar se uma pessoa deve ou não cumprir o 
+  alistamento militar, os dados recebidos são nome, idade e sexo.
+*/
+  funcao inicio() {
+    cadeia nome, sexo
+    inteiro idade
+
+    escreva("Digite o nome: ")
+    leia(nome)
+    escreva("Digite a idade: ")
+    leia(idade)
+    escreva("Digite o sexo: (h / m) ")
+    leia(sexo)
+
+  se ((sexo == 'h') e (idade >= 18)){
+    escreva("Você deve cumprir o alistamento militar.")
+  }
+  senao {
+    escreva("Você não precisa cumprir o alistamento militar.")
+  }
+  }
+}

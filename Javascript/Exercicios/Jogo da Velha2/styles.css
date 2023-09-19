@@ -1,0 +1,171 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+     user-select: none;
+}
+body {
+     text-align: center;
+     background-color: #3c095a;
+}
+h3 {
+     color: gold;
+     font-size: 4em;
+     margin: 50px auto 150px auto;
+     text-shadow: 0 0 20px white;
+}
+.jogador {
+     display: flex;
+     flex-direction: column;
+     float: left;
+     position: absolute;
+     top: 0;
+     font-size: 2em;
+     margin-top: 10px;
+     color: white;
+     margin-left: 15px;
+}
+.vencedor {
+     display: none;
+     flex-direction: column;
+     float: left;
+     position: absolute;
+     top: 10;
+     font-size: 2em;
+     margin-top: 10px;
+     margin-left: 15px;
+     color: white; 
+}
+.container {
+     margin: auto;
+     align-items: center;
+     justify-content: center;
+     border: 1px solid black;
+     width: 30%;
+     background-color: #ffffff;
+     border-radius: 30px;
+     box-shadow: 0px 0px 100px #ffffff;
+     border: none;
+}
+.quadrado {
+     text-align: center;
+     width: 150px;
+     background-color: #3c095a;
+     display: inline-block;
+     padding: 40px;
+     font-size: 70px;
+     margin: 20px 10px;
+     cursor: pointer;
+     color: #3c095a;
+     border-radius: 20px;
+     box-shadow: 0 0 10px #000;
+}
+.quadrado:hover {
+     transition: 0.3s;
+     transform: translateY(5px) scale(1.2);
+     box-shadow: none;
+}
+button {
+     margin-top: 80px;
+     margin-bottom: 50px;
+     width: 50%;
+     padding: 1em;
+     background-color: white;
+     color: black;
+     cursor: pointer;
+     border-radius: 15px;
+     font-weight: bold;
+}
+button:hover {
+     background: linear-gradient(90deg, gold, white, gold);
+     color: black;
+}
+
+@media only screen and (max-width: 415px) {
+     h3 {
+          margin-bottom: 0;
+          font-size: 2em;
+     }
+     .jogador {
+          font-size: 1.3em;
+     }
+     .container {
+          width: 95%;
+          height: auto;
+          padding: 0;
+     }
+     .quadrado {
+          margin: 5px;
+          width: 85px;
+          height: 85px;
+          font-size: 40px;
+          padding: 0.5em;
+     }
+     .quadrado:hover {
+          transform: none;
+     }
+}
+@media only screen and (max-width: 515px) {
+     h3 {
+          margin-bottom: 0;
+          font-size: 2em;
+     }
+     .container {
+          width: 95%;
+          height: auto;
+          padding: 0;
+     }
+     .quadrado {
+          margin: 5px;
+          width: 100px;
+          height: 85px;
+          font-size: 40px;
+          padding: 0.5em;
+     }
+     .quadrado:hover {
+          transform: none;
+     }
+}
+@media only screen and (max-width: 715px) {
+     h3 {
+          margin-bottom: 0;
+          font-size: 2em;
+     }
+     .container {
+          width: 95%;
+          height: auto;
+          padding: 0;
+     }
+     .quadrado {
+          margin: 5px;
+          width: 200px;
+          height: 200px;
+          font-size: 40px;
+          padding: 0.5em;
+     }
+     .quadrado:hover {
+          transform: none;
+     }
+}
+@media only screen and (max-device-width: 900px) {
+     h3 {
+          margin-bottom: 0;
+          font-size: 2em;
+     }
+     .container {
+          width: 95%;
+          height: 100%;
+          padding: 0;
+     }
+     .quadrado {
+          margin: 5px;
+          width: 100px;
+          height: 90px;
+          font-size: 40px;
+          padding: 0.5em;
+     }
+     .quadrado:hover {
+          transform: none;
+     }
+}

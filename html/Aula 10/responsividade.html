@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(117, 0, 0);
+            width: 100vw;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            overflow: hidden;
+            margin: 50px auto;
+            border-radius: 15px;
+        }
+        .minha-img {
+            margin: auto;
+
+            height: auto;
+        }
+        .formulario {
+            padding: 2em;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .campos {
+            margin: 1em;
+            display: block;         
+        }
+        @media (max-width: 1180px){
+            .container {
+                flex-direction: column;
+            } 
+        }
+        @media (max-width: 850px){
+            .minha-img img {
+                width: 800px;
+            } 
+        }
+        @media (max-width: 630px){
+            .minha-img img {
+                width: 600px;
+            } 
+        }
+        @media (max-width: 430px){
+            .minha-img img {
+                width: 400px;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="minha-img"><img src="../../imagens/banner-rangers.png" alt=""></div>
+    <div class="formulario">
+    <form action="">
+    <div class="campos">
+        <label for="login">Login: </label>
+        <input type="text" name="ilogin" id="login">
+    </div>
+    <br>
+    <div class="campos">
+        <label for="senha">Senha</label>
+        <input type="password" name="isenha" id="senha">
+    </div>
+    </form>
+    </div>!<!-- Fim div formulario -->
+    </div><!-- Fim container -->
+</body>
+</html>

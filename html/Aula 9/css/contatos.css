@@ -1,0 +1,20 @@
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 20px;
+    margin-bottom: 100px;
+}
+.contact img {
+    margin: 50px 20px;
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+}
+.contact img:hover {
+    box-shadow: 0px 0px 20px rgb(75, 75, 75);
+}
+footer {
+    text-align: center;
+}
