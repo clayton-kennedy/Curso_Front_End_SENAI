@@ -1,0 +1,44 @@
+@import url(./modal.css);
+
+:root {
+    --dark: black;
+    --light: white;
+    --medium: #2a2a2a;
+    --amarelo: yellow;
+    --confirma: #00be00;
+    --recusa: rgb(175, 0, 0);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.naoClique {
+    padding: 1em 2em;
+    background-color: #e2e200;
+    color: var(--dark);
+    border-radius: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.naoClique:hover {
+    cursor: pointer;
+    background-color: var(--amarelo);
+    filter: brightness(1.1);
+    transition: 0.3s;
+    transform: scale(1.2);
+}
