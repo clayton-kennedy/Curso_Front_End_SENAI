@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    user-select: none;
 }
 body {
     width: 100vw;
@@ -25,11 +26,12 @@ body {
     text-align: center;
     align-items: center;
     width: 25em;
-    height: 45em;
+    height: auto;
     background: transparent;
-    box-shadow: 5px 0 10px gray;
+    box-shadow: 5px 5px 10px gray;
     margin: 10px 10px;
     padding: 1em;
+    overflow: hidden;
 }
 #imagemProduto {
     width: 16em;
@@ -49,4 +51,8 @@ body {
     text-align: center;
     font-size: 3em;
     font-weight: bold;
+}
+#comprar {
+    padding: 0.5em 1em;
+    border-radius: 20px;
 }
