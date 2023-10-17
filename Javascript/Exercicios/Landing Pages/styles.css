@@ -1,0 +1,46 @@
+* {
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     background-image: url(./imagens/bg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.titulo {
+     font-size: 10em;
+     color: steelblue;
+     font-family: 'Gluten', cursive;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 100px;
+     text-shadow: 5px 5px 20px gray;
+}
+.pergunta {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 100px;
+     font-size: 2.4em;
+     color: steelblue;
+     font-family: 'Gluten', cursive;
+}
+.links {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin-top: 100px;
+}
+.links a {
+     margin-top: 20px;
+     text-decoration: none;
+     font-size: 2em;
+     color: steelblue;
+     font-family: 'Gluten', cursive;
+}
+.links a:hover {
+     color: rgb(255, 0, 0);
+}

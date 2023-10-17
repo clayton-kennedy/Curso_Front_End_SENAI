@@ -1,0 +1,134 @@
+/* site geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    border: none;
+}
+
+body {
+    background-color: #FFF;
+    background-image: url('../img/background.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+a:hover {
+    color: #6947ff;
+    text-decoration: underline;
+}
+a {
+	text-decoration: none;
+}
+a:visited {
+	color: #000000;
+}
+
+
+/* bloco do login */
+
+#bloco-login {
+    background-color: #fff;
+    background-position: center;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12vh; 
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+label {
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+input {
+    border-bottom: 2px solid #000000;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    border-color: #fff;
+    border-bottom: 2px solid #2a00e5;
+    outline: none; 
+}
+
+#link-forgot-pass {
+    text-align: right;
+    display: block;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    margin-top: 30px;
+    height: 40px;
+    color: #FFF;
+    background-color:#2200b9;
+    cursor: pointer;
+}
+
+#bloco-register{
+    text-size-adjust: .8rem;
+}
+input[type="submit"]:hover {
+    background-color: #17007b;
+    transition: 0.5s;
+}
+
+/* redes sociais */
+#bloco-redesSociais {
+    margin-bottom: 20px;
+}
+.icone img {
+    flex-direction: row;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* forgot pass */
+#form-forgot-pass {
+    background-color: #fff;
+    background-position: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12vh; 
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+#bloco-registro{
+    background-color: #fff;
+    background-position: center;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12vh; 
+    padding: 20px 30px;
+    border-radius: 15px;
+    text-align: center; 
+}

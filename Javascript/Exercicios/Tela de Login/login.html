@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
+  <Title>Login</Title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="bloco-login"> 
+        <p><h2>Login</h2></p>
+        <form action="#" method="post">
+            <label for="email">E-mail</label>  
+            <input type="email" placeholder="Digite seu e-mail" id="login" required>
+            <label for="password">Senha</label>
+            <input type="password" placeholder="Digite sua senha" id="senha" required>
+            <a href="forgot-pass.html" id="link-forgot-pass">Esqueceu a senha?</a>
+            <input type="submit" value="Login" onclick="logar(); return false">
+
+        </form>
+        <div id="bloco-redesSociais">
+            <i><p>Ou entre pelas redes sociais:</p></i>
+        <div class="icone"><img src="./img/facebook.png" alt="Facebook"><a href="https://www.facebook.com/login/" target="_blank"></a>
+        <img src="./img/linkedin.png" alt="Linkedin"><a href="https://www.linkedin.com/login/" target="_blank"></a>
+        </div>
+        <div id="bloco-register">
+            <p>Ainda não tem uma conta?</p>
+            <a href="register.html">Registre-se</a>
+        </div>
+    </div>
+    </div>
+</script>
+</body>
+</html>
